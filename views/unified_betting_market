@@ -1,7 +1,3 @@
--- View: public.unified_betting_market
-
--- DROP VIEW public.unified_betting_market;
-
 CREATE OR REPLACE VIEW public.unified_betting_market
  AS
  SELECT raw_bet_1.match,
