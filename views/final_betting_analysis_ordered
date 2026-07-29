@@ -1,7 +1,3 @@
--- View: public.final_betting_analysis_ordered
-
--- DROP VIEW public.final_betting_analysis_ordered;
-
 CREATE OR REPLACE VIEW public.final_betting_analysis_ordered
  AS
  SELECT match,
