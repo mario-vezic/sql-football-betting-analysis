@@ -1,0 +1,36 @@
+-- View: public.unified_betting_market
+
+-- DROP VIEW public.unified_betting_market;
+
+CREATE OR REPLACE VIEW public.unified_betting_market
+ AS
+ SELECT raw_bet_1.match,
+    raw_bet_1.season,
+    raw_bet_1.matchday,
+    'HOME_WIN'::text AS bet_type,
+    raw_bet_1.my_odds,
+    raw_bet_1.odds_1xbet,
+    raw_bet_1.odds_williamhill
+   FROM raw_bet_1
+UNION ALL
+ SELECT raw_bet_x.match,
+    raw_bet_x.season,
+    raw_bet_x.matchday,
+    'DRAW'::text AS bet_type,
+    raw_bet_x.my_odds,
+    raw_bet_x.odds_1xbet,
+    raw_bet_x.odds_williamhill
+   FROM raw_bet_x
+UNION ALL
+ SELECT raw_bet_2.match,
+    raw_bet_2.season,
+    raw_bet_2.matchday,
+    'AWAY_WIN'::text AS bet_type,
+    raw_bet_2.my_odds,
+    raw_bet_2.odds_1xbet,
+    raw_bet_2.odds_williamhill
+   FROM raw_bet_2;
+
+ALTER TABLE public.unified_betting_market
+    OWNER TO postgres;
+
