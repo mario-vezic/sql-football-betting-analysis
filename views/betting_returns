@@ -1,7 +1,3 @@
--- View: public.betting_returns
-
--- DROP VIEW public.betting_returns;
-
 CREATE OR REPLACE VIEW public.betting_returns
  AS
  SELECT abm.match,
