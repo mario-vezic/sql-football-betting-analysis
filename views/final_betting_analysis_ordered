@@ -1,0 +1,24 @@
+-- View: public.final_betting_analysis_ordered
+
+-- DROP VIEW public.final_betting_analysis_ordered;
+
+CREATE OR REPLACE VIEW public.final_betting_analysis_ordered
+ AS
+ SELECT match,
+    matchday,
+    home_team,
+    away_team,
+    bet_type,
+    my_odds,
+    odds_1xbet,
+    odds_williamhill,
+    my_probability,
+    market_probability,
+    odds_disagreement,
+    market_category
+   FROM final_betting_analysis
+  ORDER BY matchday, match, bet_type;
+
+ALTER TABLE public.final_betting_analysis_ordered
+    OWNER TO postgres;
+
