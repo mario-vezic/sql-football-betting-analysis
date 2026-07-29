@@ -1,0 +1,23 @@
+CREATE OR REPLACE VIEW public.final_betting_analysis
+ AS
+ SELECT rb1.match,
+    rb1.matchday,
+    rb1.home_team,
+    rb1.away_team,
+    abm.bet_type,
+    abm.my_odds,
+    abm.odds_1xbet,
+    abm.odds_williamhill,
+    round(1::numeric / abm.my_odds, 3) AS my_probability,
+    round(1::numeric / abm.odds_1xbet, 3) AS market_probability,
+    round(abs(abm.my_odds - abm.odds_1xbet), 3) AS odds_disagreement,
+        CASE
+            WHEN abm.odds_1xbet <= 1.80 THEN 'Favorite'::text
+            WHEN abm.odds_1xbet >= 1.81 AND abm.odds_1xbet <= 3.50 THEN 'Balanced'::text
+            ELSE 'Underdog'::text
+        END AS market_category
+   FROM raw_bet_1 rb1
+     JOIN active_betting_market abm ON rb1.match = abm.match AND rb1.matchday = abm.matchday;
+
+ALTER TABLE public.final_betting_analysis
+    OWNER TO postgres;
