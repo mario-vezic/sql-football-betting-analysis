@@ -1,0 +1,19 @@
+-- View: public.active_betting_market
+
+-- DROP VIEW public.active_betting_market;
+
+CREATE OR REPLACE VIEW public.active_betting_market
+ AS
+ SELECT match,
+    season,
+    matchday,
+    bet_type,
+    my_odds,
+    odds_1xbet,
+    odds_williamhill
+   FROM unified_betting_market
+  WHERE odds_1xbet IS NOT NULL AND odds_williamhill IS NOT NULL;
+
+ALTER TABLE public.active_betting_market
+    OWNER TO postgres;
+
