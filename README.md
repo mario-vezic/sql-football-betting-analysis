@@ -127,7 +127,7 @@ football-betting-sql-analysis
 │ &emsp;  └── img_unified_betting_market.JPG
 │
 └── workflow/
-&emsp;&emsp;└── Workflow Diagram.jpg
+          └── Workflow Diagram.jpg
 
 ```
 <br>
