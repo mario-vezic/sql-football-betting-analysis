@@ -6,7 +6,7 @@ This project builds upon a machine learning model developed to estimate football
 
 The project demonstrates how SQL can be used not only for data management, but also for advanced analytical tasks including probability calculations, market comparison, profitability simulations, window function analysis, and the creation of reusable analytical views.
 
-The resulting datasets were later used as the data source for an interactive Tableau dashboard. <br>
+The resulting datasets were later used as the data source for an interactive Tableau dashboard.
 <br>
 
 ## Project Objectives
