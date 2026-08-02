@@ -94,37 +94,37 @@ football-betting-sql-analysis
 ├── LICENSE
 │
 ├── cleaning/
-│ &emsp;  └── SQL_project_cleaning.ipynb
+│         └── SQL_project_cleaning.ipynb
 │
 ├── data/
-│ &emsp;  ├── raw_bet_1.csv
-│ &emsp;  ├── raw_bet_2.csv
-│ &emsp;  └── raw_bet_x.csv
+│         ├── raw_bet_1.csv
+│         ├── raw_bet_2.csv
+│         └── raw_bet_x.csv
 │
 ├── schema/
-│ &emsp;  └── backup_football_slovenia_db
+│         └── backup_football_slovenia_db
 │
 ├── queries/
-│ &emsp;  ├── 01_data_exploration_and_preparation.sql
-│ &emsp;  ├── 02_probability_and_value_analysis.sql
-│ &emsp;  ├── 03_betting_strategy_analysis.sql
-│ &emsp;  ├── 04_market_integration_and_bookmaker_analysis.sql
-│ &emsp;  ├── 05_window_functions_analysis.sql
-│ &emsp;  └── 06_final_views.sql
+│         ├── 01_data_exploration_and_preparation.sql
+│         ├── 02_probability_and_value_analysis.sql
+│         ├── 03_betting_strategy_analysis.sql
+│         ├── 04_market_integration_and_bookmaker_analysis.sql
+│         ├── 05_window_functions_analysis.sql
+│         └── 06_final_views.sql
 │
 ├── views/
-│ &emsp;  ├── active_betting_market
-│ &emsp;  ├── betting_returns
-│ &emsp;  ├── final_betting_analysis
-│ &emsp;  ├── final_betting_analysis_ordered
-│ &emsp;  └── unified_betting_market
+│         ├── active_betting_market
+│         ├── betting_returns
+│         ├── final_betting_analysis
+│         ├── final_betting_analysis_ordered
+│         └── unified_betting_market
 │
 ├── images (views)/
-│ &emsp;  ├── img_active_betting_market.JPG
-│ &emsp;  ├── img_betting_returns.JPG
-│ &emsp;  ├── img_final_betting_analysis.JPG
-│ &emsp;  ├── img_final_betting_analysis_ordered.JPG
-│ &emsp;  └── img_unified_betting_market.JPG
+│         ├── img_active_betting_market.JPG
+│         ├── img_betting_returns.JPG
+│         ├── img_final_betting_analysis.JPG
+│         ├── img_final_betting_analysis_ordered.JPG
+│         └── img_unified_betting_market.JPG
 │
 └── workflow/
           └── Workflow Diagram.jpg
