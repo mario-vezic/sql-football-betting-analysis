@@ -6,7 +6,8 @@ This project builds upon a machine learning model developed to estimate football
 
 The project demonstrates how SQL can be used not only for data management, but also for advanced analytical tasks including probability calculations, market comparison, profitability simulations, window function analysis, and the creation of reusable analytical views.
 
-The resulting datasets were later used as the data source for an interactive Tableau dashboard.
+The resulting datasets were later used as the data source for an interactive Tableau dashboard. <br>
+<br>
 
 ## Project Objectives
 
@@ -19,6 +20,7 @@ The primary objectives of this project were to:
 * Simulate multiple betting strategies using different selection criteria.
 * Evaluate betting profitability using SQL.
 * Create reusable analytical views for reporting and visualization.
+<br>
 
 ## Dataset
 
@@ -39,6 +41,7 @@ Each market contains:
 * Season and matchday information
 
 The project combines these datasets into a unified betting market for further analysis.
+<br>
 
 ## Technologies Used
 
@@ -49,11 +52,12 @@ The project combines these datasets into a unified betting market for further an
 * Common Table Expressions (CTEs)
 * Views
 * GitHub
+<br>
 
 ## SQL Workflow
 
 ```text
-Machine Learning Generated Odds
+Machine Learning Generated Odds (Python Project)
                 │
                 ▼
 Import Betting Data
@@ -77,8 +81,9 @@ Advanced SQL Analytics
 Analytical Views
                 │
                 ▼
-Tableau Dashboard
+Tableau Dashboard (Tableau Project)
 ```
+<br>
 
 ## Project Structure
 
@@ -88,30 +93,44 @@ football-betting-sql-analysis
 ├── README.md
 ├── LICENSE
 │
+├── cleaning/
+│ &emsp;  └── SQL_project_cleaning.ipynb
+│
 ├── data/
+│ &emsp;  ├── raw_bet_1.csv
+│ &emsp;  ├── raw_bet_2.csv
+│ &emsp;  └── raw_bet_x.csv
 │
 ├── schema/
-│     database_schema.sql
+│ &emsp;  └── backup_football_slovenia_db
 │
 ├── queries/
-│     01_data_preparation.sql
-│     02_probability_value_analysis.sql
-│     03_betting_strategy_analysis.sql
-│     04_market_analysis.sql
-│     05_advanced_sql_analysis.sql
-│     06_reporting_views.sql
+│ &emsp;  ├── 01_data_exploration_and_preparation.sql
+│ &emsp;  ├── 02_probability_and_value_analysis.sql
+│ &emsp;  ├── 03_betting_strategy_analysis.sql
+│ &emsp;  ├── 04_market_integration_and_bookmaker_analysis.sql
+│ &emsp;  ├── 05_window_functions_analysis.sql
+│ &emsp;  └── 06_final_views.sql
 │
 ├── views/
-│     final_betting_analysis.sql
-│     betting_returns.sql
+│ &emsp;  ├── active_betting_market
+│ &emsp;  ├── betting_returns
+│ &emsp;  ├── final_betting_analysis
+│ &emsp;  ├── final_betting_analysis_ordered
+│ &emsp;  └── unified_betting_market
 │
-├── notebooks/
-│     data_cleaning.ipynb
+├── images (views)/
+│ &emsp;  ├── img_active_betting_market.JPG
+│ &emsp;  ├── img_betting_returns.JPG
+│ &emsp;  ├── img_final_betting_analysis.JPG
+│ &emsp;  ├── img_final_betting_analysis_ordered.JPG
+│ &emsp;  └── img_unified_betting_market.JPG
 │
-└── images/
-      final_betting_analysis.png
-      betting_returns.png
+├── workflow/
+&emsp;&emsp;└── Workflow Diagram.jpg
+
 ```
+<br>
 
 ## Analysis Workflow
 
@@ -175,6 +194,7 @@ The repository includes:
 * **betting_returns** – simulated betting performance including normalized probabilities, betting edge, and profit calculations.
 
 These views were designed as the primary data source for the accompanying Tableau dashboard.
+<br>
 
 ## Key SQL Concepts Demonstrated
 
@@ -191,6 +211,7 @@ This project showcases practical use of:
 * CREATE VIEW
 * Data transformation and normalization
 * Analytical SQL reporting
+<br>
 
 ## Key Findings
 
@@ -201,6 +222,7 @@ The SQL analysis demonstrated that:
 * Betting edge provides a useful criterion for identifying potential value bets.
 * Different betting strategies produce substantially different profitability outcomes.
 * SQL is capable of supporting an entire analytical workflow beyond traditional database management.
+<br>
 
 ## Repository Contents
 
@@ -212,18 +234,22 @@ This repository contains:
 * Sample datasets.
 * Data cleaning notebook.
 * Screenshots of the final analytical views.
+<br>
 
 ## Related Projects
 
 This repository is part of a larger football betting analytics portfolio.
+<br>
 
-### Football Betting Odds Prediction Using Machine Learning
+### Football Betting Odds Compiling Using Machine Learning [python-football-odds-compiling](https://github.com/mario-vezic/python-football-odds-compiling.git) <br>
 
 A Python project that develops machine learning models for predicting football match probabilities and generating betting odds.
+<br>
 
-### Slovenian First Football League Tableau Dashboard
+### Slovenian League Tableau Dashboard [tableau-football-league-dashboard](https://github.com/mario-vezic/tableau-football-league-dashboard) <br>
 
 An interactive Tableau dashboard visualizing league statistics, bookmaker comparisons, betting performance, and profitability metrics derived from this SQL analysis.
+<br>
 
 ## About Me
 
