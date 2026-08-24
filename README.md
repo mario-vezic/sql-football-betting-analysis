@@ -253,6 +253,6 @@ An interactive Tableau dashboard visualizing league statistics, bookmaker compar
 
 ## About Me
 
-I am a Master's graduate in Business Informatics with a background in Psychology and a strong interest in data science, SQL analytics, business intelligence, and sports analytics.
+I am a Master's graduate in Business Informatics with a background in Psychology and a strong interest in machine learning, sports analytics and predictive modeling.
 
 This project demonstrates how SQL can be used to transform machine learning outputs into actionable business insights through data modelling, profitability analysis, and advanced analytical querying.
