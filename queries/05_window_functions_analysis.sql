@@ -9,7 +9,7 @@
 -- behaviour and demonstrate advanced SQL querying skills. 
 --
 -- -- Main Tasks: 
--- • Analyse odds movement 
+-- • Analyze odds movement 
 -- • Track historical odds changes 
 -- • Apply ranking functions 
 -- • Use LAG() and LEAD() 
